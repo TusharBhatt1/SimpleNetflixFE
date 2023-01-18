@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETFLIX CLONE</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+
+    <!-- HEADER START -->
+  <header id="header">
+    <div class="header-container">
+        <div class="left-cont">
+            <img  class="header-brand" src="https://images.ctfassets.net/4cd45et68cgf/7LrExJ6PAj6MSIPkDyCO86/542b1dfabbf3959908f69be546879952/Netflix-Brand-Logo.png?w=684&h=456" alt="">
+        <ul class="main-nav">
+            <li class="nav-item" id="active">Home</li>
+            <li class="nav-item">Tv Shows</li>
+            <li class="nav-item">Movies</li>
+            <li class="nav-item">News & Popular</li>
+            <li class="nav-item">My List</li>
+            <li class="nav-item">Browse by Languages</li>
+        </ul>
+        </div>
+        <div class="right-cont">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAMAAABmmnOVAAAAYFBMVEX///8AAADm5ubs7Oz4+Pj19fXw8PA0NDRBQUE8PDykpKTCwsLc3NxmZmawsLAgICDLy8t6enqOjo4sLCydnZ1WVla6urpdXV2EhIRycnIYGBjU1NQlJSUODg5tbW1LS0uflzq3AAAErElEQVR4nO1b55qjMAwE0wm9hUDK+7/l7Vo0s2mSxbF3X+ZvsBmskTwuMYwPPvjgP4PtWkIIy7X3eb0rDkV88wOvPJde4N/i6iCcv8pAhFfP/Ak/D92/xCCqzncIjAhCsTkD+1BfnlD4Rhdn20qkub1gAKgP21E4lMqrbm2VNFnfZ1mTVK1K75ZtQyGq53ekcRitx9yOqribH7luoY1q0kIXN9aDh0QySyYNuSlYx+kTi+jpk1E7DwavQJvp86rXD9vV9DSnMsKx1/ZRHFSIfHj+krBxKIYug+eBWCIbE4lLGPHQ3xuRWGAcjJaFwwk6O2Pje+j4WAxiD95TwxKio4zgPQx6OFKyzfWhsa46E+jmRGvtDNVFbyqJhnGgtneh1Kf4WM6wYTxv9MrnQBWvNUhAmnk6tm1QJ12cBwjG+yVqi05SlppXaAUE5qFYk4NhBBp5aklNnfW9CaRYR2pbsBSauSdKWIVUhM/AwXBLapIBfR5XkhAH1e7YBuILcrl0QzcDQ9cwkYBE67HN5NTjczlVqN45spXL5ARGwASAbARS4lu/ZJQp/Up2MvfhyFVigWpjebzRGFwiTmM9czTGeKDMTUjR0VM4eFFceebPBewaLYqAw0ioaLHf5ZT6HnkNGeEaoUxpDC/oKvsU0uZhllBSyinvVou0Nh3CasrZy+Pd4nCxc5gs2h4rB8PG+hNJIuAlYXxIaJHYWxPNBiQcbHbIwlLyHhtYWBL9BVlY3oAsgCWiAMLCh3ePXIbYx4yux7UCnCFdP2rLh+AIX0H6bdTeV8ueHnaJtigNu72D5EBpPcJWlpeQ9e+CynpYJvBsSwNigmuVogj4TlvFmeBaM2x9e4GGtJAx0Rn1FDK8Z2yrgtVmwooOvYaAZlz1Kid+Euw+8phdKBKEFR1sB/MszHN8pQLYcO6sc0gwoqcOxJhV2H2me6g18h2GQn9FCvsMxIMbGMVU1+UJk6oICblLYV71OMDGBD3ZrY5WYxTAkabGNDSc2ujs61Z6wfgGfMaFbiyG6wZa5caGuknex4PJmH6kCXDhHIyY5MM4aBxpAno42Owo5WI4XjZ97cl4ECdhFTJdKDED7RXlyAJZwJ3YnOGxsUDdoDiYCgLtiPSDOs3i3Q+aLtVM8LWnYzFe+SvfU0Z4536e1ok7YPqyS/KqMzf8yUCy0DeszXSjzSue9GZHxXRR8ry6LqifqYZYXL2Lw/sRtsL5Ypp5EoYIuCNiNMtLiF6b9EuZulnSLi+LBjKVXPUCq8dhFiu1zy7141Pe5qejn3bKL/4oYFcdC4aIfI93ar5GuRCv8FUWPLtxzfHBq0dc1WnGWkWEaZHthHH3gEB3/ZnBtspCv3aOsLKiDlQmaVAX2V3hWauIcJ6jOFHWhF+qPJ3yImmy6PE4i1VE9rnv7myQqXhsGZH3scpUfZdDwrp27sPCUWsnX6aisK6dO6lzm9qJxKp2MrgcCn5JpvK7HAK2cDkEFr8jIpu4HCzWmbpT7dzK5aCwztR91Pk7XM6vrJ2cp20IKJka7/Qvy2Xt1Nzc08HkcjT3rfUwRIT532JYyNq5YywAX5nKetWRBtHuG4sPPvjgH8QfDMIq//YcqPYAAAAASUVORK5CYII=">
+             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALMAAACzCAMAAAD1yt3BAAAAYFBMVEUNfoD///8AenwAd3kAdHb7/f3s9PSRuLny+PjZ6ekzi41Fl5mvzs7f7Oy10dIhgIJpoaKFsrNsqKl/qqt6ra7D29uWwME8kZNRmJonhoiNu71cnp+nycrR5eWcxsfQ4OEeXbikAAADSklEQVR4nO3a6XaiMBgGYMgGhEWJCbKI3v9dDmFaK0tbGw1Oz7zP6Z/2WL7XGBJJEgQAAAAAAAAAAAAAAAAAAAAA/xlCqf3ZqBZ5Qi1CpI6qSB+J/9SU1GVVRfvmsdQszfI4DMM4L2r6rGzrCFEm57ZWUjUP1KKlDfxX3HptabLL+LVW0jnXIqfwVuaxpUmT3JaKtWNoWoZTPlu6mJYSbi1NmniWWdS+QhPNZ7V6pw+VncO5zFNmIi+LWp1T6HxxneToJzTZzz/SMDTM4Tq1WFyH7z1ljhalwqT5eS1azrvYwPV2/gZZdkOnm4dF22UOsudkpnrZx7y1c/WczCTdrj8vZgLH/hzQDceNbtk+LuNGwJZv/uRr9m7MolbqUossBug89TYPqvnNY9yah84vpPx936Cz0c65eUg7Ge7OLj3s3lLTL0nC/WZnXXJNnXceI9ta7fU+5EY+8qW/qS4551xcKun74YqkWS+GWvlFBw/VIjSoD4dD9+Az2p21mv1QKw2e8BRLh0fhjZ67x1qblAIAAAAAAACAX4Qyyn7VkgEhRBtzclkydylml50evQiVetxGFh5XYT+qySg76cdSExZE/duypq9NhRs0tScZYlO7L58S1rQfC7E+l7vfC77tCsRDT3QpNvzTMZss0vva2Lu62QLlpx8fdbHLr+V8T8V75slZD2FKSe6OPbyy0UU+30L1d4rhHZ1uS3JRqIDdEZswJnUhlvunXHtOPNQ+Lrb4YqPkzg63q8nHv+9kes5X9ntD3nvbI7vB2pX98bAvItXJYWJjzK68W5QOv5FAdqrNzFre8d0yz0e23uhkrT6PRW+KoiqVqtNBrVQZFYXpRbz2Jm3iYr/NJBjYSWW1qa/ZYzGKY/7Fy0KedcFGWyFjaBZU4qs834rz9vEdoB+nlmW/3kfvkNux5gXf5wiRKlueEvieyMp68za+pqbB0Ng/C8xNe3xZ4PfYjCqTfzYwTNLGIslSes/04x9lTdcW/WJKnvSHxJx1/ZI+/Ak70TX1vjybxI5wk7YVuTm1h07uPpklX4nYY9i7YYru9lpHI6VUd5S73XhC+9X5vmCj0xv/dFgAAAAAAAAAAAAAAAAAAAAAAAAAAACA/9Yf/+UglJYwmT8AAAAASUVORK5CYII=">
+        
+    </div>
+    </div>
+  </header>
+  <!-- HEADER END -->
+   <!-- Banner section -->
+   <div class="banner-section">
+    <div class="banner-content" style="background-image: url('https://image.tmdb.org/t/p/original/dKqa850uvbNSCaQCV4Im1XlzEtQ.jpg')";>
+        <h2 class="banner_title">London Crime</h2>
+        <p class="banner_info">#4 in TV Shows Today</p>
+        <p class="banner_overview">In London, crime was becoming an epidemic in much of the city,<br> as bombed-out buildings gave criminals safe havens</p>
+        <div class="action-buttons-cont">
+            <button class="action-button" id="first">> Play</button>
+            <button class="action-button">More Info</button>
+        </div>
+    </div>
+  </div>
+  <!-- MOVIES SECTION START -->
+  <div class="movie-cont container" id="movies-cont">
+   <div class="movies-section">
+    <h2 class="movie-section-heading">TRENDING NOW <span class="explore-nudge">EXPLORE ALL</span></h2>
+    <div class="movies-row">
+        <img class="movie-item" height=250px src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABYjXrxZKtrzxQRVQNn2aIByoomnlbXmJ-uBy7du8a5Si3xqIsgerTlwJZG1vMpqer2kvcILy0UJQnjfRUQ5cEr7gQlYqXfxUg7bz.png?r=420" alt="">
+        <img class="movie-item" height=250px src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/3423/753423-h" alt="">
+        <img class="movie-item" height=250px src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/1617/1431617-v-5fa545537fdb" alt="">
+        <img class="movie-item" height=250px src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/6498/1316498-v-00e7de2a48a6" alt="">
+    </div>
+
+   </div>
+  </div>
+  <!-- MOVIES SECTION END -->
+
+ 
+</body>
+</html>
